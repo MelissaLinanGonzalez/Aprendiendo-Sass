@@ -1,0 +1,15 @@
+$cabecera: rgb(15,82,186);
+$contenido: rgb(80, 200, 120);
+$pie: rgb(255, 111, 97);
+
+header{
+    background-color: $cabecera;
+}
+
+main{
+    background-color: $contenido;
+}
+
+footer{
+    background-color: $pie;
+}
