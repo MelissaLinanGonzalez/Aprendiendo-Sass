@@ -1,0 +1,56 @@
+$colores: #bd07eb, #106ee9, #4be6aa, #eb9b07, #03ff2d, #fa1da5, #07b6eb;
+
+#modulos {
+    table {
+        text-align: left;
+        border-collapse: collapse;
+        border: 1px solid black;
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            width: 250px;
+            border-collapse: collapse;
+        }
+        
+
+        @for $i from 1 through length($colores) {
+            tr:nth-child(#{$i}) {
+                background-color: nth($colores, $i);
+            }
+        }
+    }
+}
+
+#prueba {
+    $tamanos-titulos: (
+        h1: 40px,
+        h2: 35.2px,
+        h3: 30.4px,
+        h4: 25.6px,
+        h5: 20.8px,
+        h6: 16px
+    );
+
+    @each $tag, $size in $tamanos-titulos {
+        #{$tag} {
+            font-size: $size;
+        }
+    }
+}
+
+@function calcularAnchura($base, $factor) {
+    @return $base * $factor + px;
+}
+
+@media (max-width: 1000px) {
+    #modulos {
+        width: calcularAnchura(100, 5);
+    }
+}
+
+@media (max-width: 600px) {
+    #modulos {
+        width: calcularAnchura(100, 4);
+    }
+}

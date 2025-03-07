@@ -1,0 +1,69 @@
+#modulos table {
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+#modulos table td, #modulos table th {
+  border: 1px solid black;
+  padding: 10px;
+  width: 250px;
+  border-collapse: collapse;
+}
+#modulos table tr:nth-child(1) {
+  background-color: #bd07eb;
+}
+#modulos table tr:nth-child(2) {
+  background-color: #106ee9;
+}
+#modulos table tr:nth-child(3) {
+  background-color: #4be6aa;
+}
+#modulos table tr:nth-child(4) {
+  background-color: #eb9b07;
+}
+#modulos table tr:nth-child(5) {
+  background-color: #03ff2d;
+}
+#modulos table tr:nth-child(6) {
+  background-color: #fa1da5;
+}
+#modulos table tr:nth-child(7) {
+  background-color: #07b6eb;
+}
+
+#prueba h1 {
+  font-size: 2.5rem;
+}
+#prueba h2 {
+  font-size: 2.2rem;
+}
+#prueba h3 {
+  font-size: 1.9rem;
+}
+#prueba h4 {
+  font-size: 1.6rem;
+}
+#prueba h5 {
+  font-size: 1.3rem;
+}
+#prueba h6 {
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  #modulos {
+    width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  #modulos {
+    width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  #modulos {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
