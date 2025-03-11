@@ -1,0 +1,34 @@
+@use "variables" as *;
+
+body{
+    width: 97.5%;
+}
+
+#modulos {
+    table {
+        border-collapse: collapse;
+
+        td, th {  
+            padding: 2%;
+        }
+
+        @for $i from 1 through length($colores) {
+            tr:nth-child(#{$i}) {
+                background-color: nth($colores, $i);
+            }
+        }
+    }
+}
+
+#prueba{
+    @each $tag, $size in $tamanos-titulos {
+        #{$tag} {
+            font-size: $size;
+        }
+    }
+}
+
+#pie{
+    background-color: aqua;
+    width: 100%;
+}

@@ -1,0 +1,26 @@
+@use "variables";
+@use "estructuras_repetitivas";
+@use "funciones";
+@use "menu";
+@use "mixins";
+
+
+#modulos{
+    @include mixins.centrar_bloque;
+}
+
+#pie{
+    @include mixins.elementos_linea;
+}
+
+@media (max-width: 1000px) {
+    #modulos {
+        width: calcularAnchura(100, 5);
+    }
+}
+
+@media (max-width: 600px) {
+    #modulos {
+        width: calcularAnchura(100, 4);
+    }
+}

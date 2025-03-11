@@ -1,0 +1,131 @@
+body {
+  width: 97.5%;
+}
+
+#modulos table {
+  border-collapse: collapse;
+}
+#modulos table td, #modulos table th {
+  padding: 2%;
+}
+#modulos table tr:nth-child(1) {
+  background-color: #bd07eb;
+}
+#modulos table tr:nth-child(2) {
+  background-color: #106ee9;
+}
+#modulos table tr:nth-child(3) {
+  background-color: #4be6aa;
+}
+#modulos table tr:nth-child(4) {
+  background-color: #eb9b07;
+}
+#modulos table tr:nth-child(5) {
+  background-color: #03ff2d;
+}
+#modulos table tr:nth-child(6) {
+  background-color: #fa1da5;
+}
+#modulos table tr:nth-child(7) {
+  background-color: #07b6eb;
+}
+
+#prueba h1 {
+  font-size: 40px;
+}
+#prueba h2 {
+  font-size: 35.2px;
+}
+#prueba h3 {
+  font-size: 30.4px;
+}
+#prueba h4 {
+  font-size: 25.6px;
+}
+#prueba h5 {
+  font-size: 20.8px;
+}
+#prueba h6 {
+  font-size: 16px;
+}
+
+#pie {
+  background-color: aqua;
+  width: 100%;
+}
+
+tr:nth-child(1) {
+  background-color: #bd07eb;
+}
+
+tr:nth-child(2) {
+  background-color: #106ee9;
+}
+
+tr:nth-child(3) {
+  background-color: #4be6aa;
+}
+
+tr:nth-child(4) {
+  background-color: #eb9b07;
+}
+
+tr:nth-child(5) {
+  background-color: #03ff2d;
+}
+
+tr:nth-child(6) {
+  background-color: #fa1da5;
+}
+
+tr:nth-child(7) {
+  background-color: #07b6eb;
+}
+
+#menu_sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #333333;
+  color: #fff;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+}
+#menu_sticky a {
+  color: yellow;
+  text-decoration: none;
+  padding: 0%;
+  display: inline-block;
+}
+#menu_sticky a:hover {
+  background-color: #555;
+}
+
+#modulos {
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#pie {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1000px) {
+  #modulos {
+    width: calcularAnchura(100, 5);
+  }
+}
+@media (max-width: 600px) {
+  #modulos {
+    width: calcularAnchura(100, 4);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

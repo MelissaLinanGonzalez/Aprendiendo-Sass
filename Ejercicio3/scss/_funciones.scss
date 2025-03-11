@@ -1,0 +1,7 @@
+@use "variables" as *;
+
+@for $i from 1 through length($colores) { 
+    tr:nth-child(#{$i}) {
+        background-color: nth($colores, $i);
+    }
+}
